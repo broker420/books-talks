@@ -25,6 +25,19 @@
   <!--- DESCRIPTION: Main navigation bar with logo, menu items, and YouTube button --->
   <header class="bg-white sticky top-0 z-50 shadow-sm">
    <nav class="max-w-7xl mx-auto px-6">
+    <div id="mobileMenu"
+class="fixed top-0 left-0 w-full h-full bg-black/40 backdrop-blur-sm hidden z-40">
+
+  <div id="menuContent"
+  class="bg-white w-full p-6 flex flex-col gap-6 transform -translate-y-full transition-transform duration-300">
+
+    <a href="index.html" onclick="toggleMenu()">Home</a>
+    <a href="All Semester notes.html" onclick="toggleMenu()">All Semester Notes</a>
+    <a href="about.html" onclick="toggleMenu()">About</a>
+    <a href="conttact.html" onclick="toggleMenu()">Contact</a>
+
+  </div>
+</div>
     <div class="flex items-center justify-between h-18">
      <div class="flex items-center gap-2">
       <svg fill="none" height="32" stroke="#1E3A8A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
@@ -68,17 +81,12 @@
        </svg>
        YouTube
        </a>
-      
-      <button class="md:hidden">
-       <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-        <line x1="3" x2="21" y1="12" y2="12">
-        </line>
-        <line x1="3" x2="21" y1="6" y2="6">
-        </line>
-        <line x1="3" x2="21" y1="18" y2="18">
-        </line>
-       </svg>
-      </button>
+       <button onclick="toggleMenu()" class="md:hidden flex flex-col gap-1.5">
+  <span id="line1" class="w-6 h-0.5 bg-black transition-all"></span>
+  <span id="line2" class="w-6 h-0.5 bg-black transition-all"></span>
+  <span id="line3" class="w-6 h-0.5 bg-black transition-all"></span>
+</button>
+
      </div>
     </div>
    </nav>
@@ -675,7 +683,36 @@
   </footer>
   <!--- END --->
   <script>
-  async function loadLatestVideos() {
+    document.getElementById("mobileMenu").addEventListener("click", function(e){
+  if(e.target.id === "mobileMenu"){
+    toggleMenu();
+  }
+});
+  function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  const content = document.getElementById("menuContent");
+
+  const l1 = document.getElementById("line1");
+  const l2 = document.getElementById("line2");
+  const l3 = document.getElementById("line3");
+
+  menu.classList.toggle("hidden");
+
+  setTimeout(() => {
+    content.classList.toggle("-translate-y-full");
+  }, 10);
+
+  // Animate hamburger to X
+  l1.classList.toggle("rotate-45");
+  l1.classList.toggle("translate-y-2");
+
+  l2.classList.toggle("opacity-0");
+
+  l3.classList.toggle("-rotate-45");
+  l3.classList.toggle("-translate-y-2");
+}
+
+    async function loadLatestVideos() {
   const channelId = "UCnabLOj--iimSZyasudxaxw"; 
   const feedUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
 
