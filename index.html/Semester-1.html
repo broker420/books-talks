@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Semester 1 Notes - B.A.L.L.B | Book&amp;talks
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+font-family: 'Inter', sans-serif;
+}
+  </style>
+ </head>
+ <body class="bg-[#F8FAFC] text-[#0F172A]">
+  <!--- START: Navigation Bar --->
+  <!--- DESCRIPTION: Top navigation with logo, main menu, and YouTube button --->
+  <nav class="bg-white h-[72px] sticky top-0 z-50 shadow-sm">
+   <div class="max-w-[1280px] mx-auto px-6 h-full flex items-center justify-between">
+    <div class="flex items-center gap-12">
+     <div class="flex items-center gap-2">
+      <svg fill="none" height="28" stroke="#1E3A8A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20">
+       </path>
+      </svg>
+      <span class="text-2xl font-bold text-[#1E3A8A]">
+       Book&amp;talks
+      </span>
+     </div>
+     <div class="hidden md:flex items-center gap-8">
+      <a class="text-base text-[#64748B]" href="#">
+       Home
+      </a>
+      <a class="text-base font-semibold text-[#1E3A8A]" href="#">
+       All Notes
+      </a>
+      <a class="text-base text-[#64748B]" href="#">
+       About
+      </a>
+      <a class="text-base text-[#64748B]" href="#">
+       Contact
+      </a>
+     </div>
+    </div>
+    <div class="flex items-center gap-4">
+     <button class="bg-[#FF0000] text-white px-7 py-3 rounded-lg font-medium flex items-center gap-2">
+      <svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
+       </path>
+      </svg>
+      YouTube
+     </button>
+     <button class="md:hidden">
+      <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+       <line x1="3" x2="21" y1="12" y2="12">
+       </line>
+       <line x1="3" x2="21" y1="6" y2="6">
+       </line>
+       <line x1="3" x2="21" y1="18" y2="18">
+       </line>
+      </svg>
+     </button>
+    </div>
+   </div>
+  </nav>
+  <!--- END --->
+  <!--- START: Breadcrumbs --->
+  <!--- DESCRIPTION: Navigation path showing user location --->
+  <div class="bg-white border-b border-[#E2E8F0]">
+   <div class="max-w-[900px] mx-auto px-6 py-4">
+    <div class="flex items-center justify-center gap-2 text-sm text-[#64748B]">
+     <a class="flex items-center gap-1" href="#">
+      <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+       <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+       </path>
+       <polyline points="9 22 9 12 15 12 15 22">
+       </polyline>
+      </svg>
+      Home
+     </a>
+     <span>
+      /
+     </span>
+     <a href="#">
+      All Notes
+     </a>
+     <span>
+      /
+     </span>
+     <span class="text-[#0F172A] font-medium">
+      Semester 1
+     </span>
+    </div>
+   </div>
+  </div>
+  <!--- END --->
+  <!--- START: Page Header --->
+  <!--- DESCRIPTION: Semester title, description, and filter bar --->
+  <div class="max-w-[900px] mx-auto px-6 py-12">
+   <div class="bg-white rounded-xl p-8 shadow-sm mb-8 text-center">
+    <h1 class="text-5xl font-bold text-[#1E3A8A] mb-4">
+     Semester 1 Notes
+    </h1>
+    <p class="text-base text-[#64748B] max-w-2xl mx-auto mb-6">
+     Complete notes for all Semester 1 subjects of B.A.L.L.B program. Download PDF notes for each subject and access corresponding YouTube video lectures.
+    </p>
+    <div class="flex flex-wrap items-center justify-center gap-3 pt-6 border-t border-[#E2E8F0]">
+     <input class="px-4 py-3 bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg text-sm outline-none w-full max-w-[300px]" placeholder="Search subjects..." type="text"/>
+     <select class="px-4 py-3 bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg text-sm outline-none">
+      <option>
+       All Subjects
+      </option>
+      <option>
+       General English-I
+      </option>
+      <option>
+       Sociology-I
+      </option>
+      <option>
+       Political Science-I
+      </option>
+      <option>
+       Economics-I
+      </option>
+      <option>
+       Indian History-I
+      </option>
+      <option>
+       BL-102
+      </option>
+      <option>
+       BL-103
+      </option>
+      <option>
+       BL-104
+      </option>
+     </select>
+    </div>
+   </div>
+   <!--- END --->
+   <!--- START: Subject Notes List --->
+   <!--- DESCRIPTION: List of all Semester 1 subjects with download options --->
+   <div class="space-y-4">
+    <article class="bg-white rounded-lg p-6 shadow-sm border border-[#E2E8F0] text-center">
+     <div class="flex justify-center mb-3">
+      <div class="w-[48px] h-[48px] bg-gradient-to-br from-[#EF4444] to-[#DC2626] rounded-lg flex items-center justify-center">
+       <svg fill="none" height="24" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+        </path>
+        <polyline points="14 2 14 8 20 8">
+        </polyline>
+       </svg>
+      </div>
+     </div>
+     <h3 class="text-lg font-bold text-[#0F172A] mb-2">
+      General English-I
+     </h3>
+     <p class="text-sm text-[#64748B] mb-3">
+      Fundamentals of English language, grammar, composition and communication skills
+     </p>
+     <div class="flex flex-wrap justify-center gap-2 mb-4">
+      <span class="px-3 py-1 bg-[#EFF6FF] text-[#1E3A8A] text-xs font-medium rounded-full">
+       Semester 1
+      </span>
+      <span class="px-3 py-1 bg-[#F0FDF4] text-[#10B981] text-xs font-medium rounded-full">
+       Language
+      </span>
+     </div>
+     <div class="flex justify-center gap-2">
+      <button class="px-6 py-2 bg-[#3B82F6] text-white rounded-lg font-medium text-sm">
+       View
+      </button>
+      <button class="px-6 py-2 bg-[#10B981] text-white rounded-lg font-medium text-sm flex items-center gap-2">
+       <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
+        </path>
+        <polyline points="7 10 12 15 17 10">
+        </polyline>
+        <line x1="12" x2="12" y1="15" y2="3">
+        </line>
+       </svg>
+       Download
+      </button>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg p-6 shadow-sm border border-[#E2E8F0] text-center">
+     <div class="flex justify-center mb-3">
+      <div class="w-[48px] h-[48px] bg-gradient-to-br from-[#8B5CF6] to-[#7C3AED] rounded-lg flex items-center justify-center">
+       <svg fill="none" height="24" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+        </path>
+        <polyline points="14 2 14 8 20 8">
+        </polyline>
+       </svg>
+      </div>
+     </div>
+     <h3 class="text-lg font-bold text-[#0F172A] mb-2">
+      Sociology-I
+     </h3>
+     <p class="text-sm text-[#64748B] mb-3">
+      Introduction to sociology, social structures, institutions and Indian society
+     </p>
+     <div class="flex flex-wrap justify-center gap-2 mb-4">
+      <span class="px-3 py-1 bg-[#EFF6FF] text-[#1E3A8A] text-xs font-medium rounded-full">
+       Semester 1
+      </span>
+      <span class="px-3 py-1 bg-[#F0FDF4] text-[#10B981] text-xs font-medium rounded-full">
+       Social Science
+      </span>
+     </div>
+     <div class="flex justify-center gap-2">
+      <button class="px-6 py-2 bg-[#3B82F6] text-white rounded-lg font-medium text-sm">
+       View
+      </button>
+      <button class="px-6 py-2 bg-[#10B981] text-white rounded-lg font-medium text-sm flex items-center gap-2">
+       <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
+        </path>
+        <polyline points="7 10 12 15 17 10">
+        </polyline>
+        <line x1="12" x2="12" y1="15" y2="3">
+        </line>
+       </svg>
+       Download
+      </button>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg p-6 shadow-sm border border-[#E2E8F0] text-center">
+     <div class="flex justify-center mb-3">
+      <div class="w-[48px] h-[48px] bg-gradient-to-br from-[#10B981] to-[#059669] rounded-lg flex items-center justify-center">
+       <svg fill="none" height="24" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+        </path>
+        <polyline points="14 2 14 8 20 8">
+        </polyline>
+       </svg>
+      </div>
+     </div>
+     <h3 class="text-lg font-bold text-[#0F172A] mb-2">
+      Political Science-I
+     </h3>
+     <p class="text-sm text-[#64748B] mb-3">
+      Introduction to political theory, systems, Indian Constitution and governance
+     </p>
+     <div class="flex flex-wrap justify-center gap-2 mb-4">
+      <span class="px-3 py-1 bg-[#EFF6FF] text-[#1E3A8A] text-xs font-medium rounded-full">
+       Semester 1
+      </span>
+      <span class="px-3 py-1 bg-[#F0FDF4] text-[#10B981] text-xs font-medium rounded-full">
+       Political Science
+      </span>
+     </div>
+     <div class="flex justify-center gap-2">
+      <button class="px-6 py-2 bg-[#3B82F6] text-white rounded-lg font-medium text-sm">
+       View
+      </button>
+      <button class="px-6 py-2 bg-[#10B981] text-white rounded-lg font-medium text-sm flex items-center gap-2">
+       <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
+        </path>
+        <polyline points="7 10 12 15 17 10">
+        </polyline>
+        <line x1="12" x2="12" y1="15" y2="3">
+        </line>
+       </svg>
+       Download
+      </button>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg p-6 shadow-sm border border-[#E2E8F0] text-center">
+     <div class="flex justify-center mb-3">
+      <div class="w-[48px] h-[48px] bg-gradient-to-br from-[#EC4899] to-[#DB2777] rounded-lg flex items-center justify-center">
+       <svg fill="none" height="24" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+        </path>
+        <polyline points="14 2 14 8 20 8">
+        </polyline>
+       </svg>
+      </div>
+     </div>
+     <h3 class="text-lg font-bold text-[#0F172A] mb-2">
+      Economics-I
+     </h3>
+     <p class="text-sm text-[#64748B] mb-3">
+      Microeconomics fundamentals, market structures and Indian economic development
+     </p>
+     <div class="flex flex-wrap justify-center gap-2 mb-4">
+      <span class="px-3 py-1 bg-[#EFF6FF] text-[#1E3A8A] text-xs font-medium rounded-full">
+       Semester 1
+      </span>
+      <span class="px-3 py-1 bg-[#F0FDF4] text-[#10B981] text-xs font-medium rounded-full">
+       Economics
+      </span>
+     </div>
+     <div class="flex justify-center gap-2">
+      <button class="px-6 py-2 bg-[#3B82F6] text-white rounded-lg font-medium text-sm">
+       View
+      </button>
+      <button class="px-6 py-2 bg-[#10B981] text-white rounded-lg font-medium text-sm flex items-center gap-2">
+       <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
+        </path>
+        <polyline points="7 10 12 15 17 10">
+        </polyline>
+        <line x1="12" x2="12" y1="15" y2="3">
+        </line>
+       </svg>
+       Download
+      </button>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg p-6 shadow-sm border border-[#E2E8F0] text-center">
+     <div class="flex justify-center mb-3">
+      <div class="w-[48px] h-[48px] bg-gradient-to-br from-[#F97316] to-[#EA580C] rounded-lg flex items-center justify-center">
+       <svg fill="none" height="24" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+        </path>
+        <polyline points="14 2 14 8 20 8">
+        </polyline>
+       </svg>
+      </div>
+     </div>
+     <h3 class="text-lg font-bold text-[#0F172A] mb-2">
+      Indian History-I
+     </h3>
+     <p class="text-sm text-[#64748B] mb-3">
+      Ancient and medieval Indian history, civilization and cultural heritage
+     </p>
+     <div class="flex flex-wrap justify-center gap-2 mb-4">
+      <span class="px-3 py-1 bg-[#EFF6FF] text-[#1E3A8A] text-xs font-medium rounded-full">
+       Semester 1
+      </span>
+      <span class="px-3 py-1 bg-[#F0FDF4] text-[#10B981] text-xs font-medium rounded-full">
+       History
+      </span>
+     </div>
+     <div class="flex justify-center gap-2">
+      <button class="px-6 py-2 bg-[#3B82F6] text-white rounded-lg font-medium text-sm">
+       View
+      </button>
+      <button class="px-6 py-2 bg-[#10B981] text-white rounded-lg font-medium text-sm flex items-center gap-2">
+       <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
+        </path>
+        <polyline points="7 10 12 15 17 10">
+        </polyline>
+        <line x1="12" x2="12" y1="15" y2="3">
+        </line>
+       </svg>
+       Download
+      </button>
+     </div>
+    </article>
+   </div>
+   <!--- END --->
+   <div class="mt-8 flex justify-center">
+    <div class="flex items-center gap-2">
+     <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-[#E2E8F0] text-[#64748B]">
+      <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+       <polyline points="15 18 9 12 15 6">
+       </polyline>
+      </svg>
+     </button>
+     <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-[#3B82F6] text-white font-medium">
+      1
+     </button>
+     <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-[#E2E8F0] text-[#64748B]">
+      <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+       <polyline points="9 18 15 12 9 6">
+       </polyline>
+      </svg>
+     </button>
+    </div>
+   </div>
+  </div>
+  <!--- START: Footer --->
+  <!--- DESCRIPTION: Footer with links, copyright, and contact information --->
+  <footer class="bg-white border-t border-[#E2E8F0] mt-20">
+   <div class="max-w-[1280px] mx-auto px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+     <div>
+      <div class="flex items-center gap-2 mb-4">
+       <svg fill="none" height="24" stroke="#1E3A8A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20">
+        </path>
+       </svg>
+       <span class="text-xl font-bold text-[#1E3A8A]">
+        Book&amp;talks
+       </span>
+      </div>
+      <p class="text-sm text-[#64748B]">
+       Comprehensive B.A.L.L.B notes and resources for law students.
+      </p>
+     </div>
+     <div>
+      <h4 class="font-semibold text-[#0F172A] mb-4">
+       Quick Links
+      </h4>
+      <ul class="space-y-2">
+       <li>
+        <a class="text-sm text-[#64748B]" href="#">
+         Home
+        </a>
+       </li>
+       <li>
+        <a class="text-sm text-[#64748B]" href="#">
+         All Notes
+        </a>
+       </li>
+       <li>
+        <a class="text-sm text-[#64748B]" href="#">
+         About
+        </a>
+       </li>
+       <li>
+        <a class="text-sm text-[#64748B]" href="#">
+         Contact
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h4 class="font-semibold text-[#0F172A] mb-4">
+       Subjects
+      </h4>
+      <ul class="space-y-2">
+       <li>
+        <a class="text-sm text-[#64748B]" href="#">
+         Constitutional Law
+        </a>
+       </li>
+       <li>
+        <a class="text-sm text-[#64748B]" href="#">
+         Criminal Law
+        </a>
+       </li>
+       <li>
+        <a class="text-sm text-[#64748B]" href="#">
+         Contract Law
+        </a>
+       </li>
+       <li>
+        <a class="text-sm text-[#64748B]" href="#">
+         Tort Law
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h4 class="font-semibold text-[#0F172A] mb-4">
+       Connect
+      </h4>
+      <ul class="space-y-2">
+       <li>
+        <a class="text-sm text-[#64748B]" href="#">
+         YouTube Channel
+        </a>
+       </li>
+       <li>
+        <a class="text-sm text-[#64748B]" href="#">
+         Email Us
+        </a>
+       </li>
+       <li>
+        <a class="text-sm text-[#64748B]" href="#">
+         Privacy Policy
+        </a>
+       </li>
+       <li>
+        <a class="text-sm text-[#64748B]" href="#">
+         Terms of Use
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="pt-8 border-t border-[#E2E8F0] text-center">
+     <p class="text-sm text-[#64748B]">
+      © 2024 Book&amp;talks. All rights reserved. Made for B.A.L.L.B students with dedication.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <!--- END --->
+ </body>
+</html>
