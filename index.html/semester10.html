@@ -4,8 +4,9 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Semester 2 Notes - B.A.L.L.B | Book&amp;talks
+   Semester 10 Notes - B.A.L.L.B | Book&amp;talks
   </title>
+  <link rel="icon" href="web-app-manifest-512x512.png">
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -21,6 +22,16 @@ font-family: 'Inter', sans-serif;
   <!--- START: Navigation Bar --->
   <!--- DESCRIPTION: Top navigation with logo, main menu, and YouTube button --->
   <nav class="bg-white h-[72px] sticky top-0 z-50 shadow-sm">
+    <div id="mobileMenu" class="fixed top-0 left-0 w-full h-full bg-black/40 backdrop-blur-sm hidden z-40">
+
+   <div id="menuContent" class="bg-white w-full p-6 flex flex-col gap-6 transform -translate-y-full transition-transform duration-300">
+
+    <a href="index.html" onclick="toggleMenu()">Home</a>
+    <a href="All Semester notes.html" onclick="toggleMenu()">All Semester Notes</a>
+    <a href="about.html" onclick="toggleMenu()">About</a>
+    <a href="conttact.html" onclick="toggleMenu()">Contact</a>
+   </div>
+  </div>
    <div class="max-w-[1280px] mx-auto px-6 h-full flex items-center justify-between">
     <div class="flex items-center gap-12">
      <div class="flex items-center gap-2">
@@ -55,16 +66,11 @@ font-family: 'Inter', sans-serif;
       </svg>
       YouTube
      </button>
-     <button class="md:hidden">
-      <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-       <line x1="3" x2="21" y1="12" y2="12">
-       </line>
-       <line x1="3" x2="21" y1="6" y2="6">
-       </line>
-       <line x1="3" x2="21" y1="18" y2="18">
-       </line>
-      </svg>
      </button>
+     <button onclick="toggleMenu()" class="md:hidden flex flex-col gap-1.5">
+      <span id="line1" class="w-6 h-0.5 bg-black transition-all"></span>
+      <span id="line2" class="w-6 h-0.5 bg-black transition-all"></span><span id="line3" class="w-6 h-0.5 bg-black transition-all"></span>
+    </button>
     </div>
    </div>
   </nav>
@@ -93,7 +99,7 @@ font-family: 'Inter', sans-serif;
       /
      </span>
      <span class="text-[#0F172A] font-medium">
-      Semester 2
+      Semester 10
      </span>
     </div>
    </div>
@@ -104,47 +110,13 @@ font-family: 'Inter', sans-serif;
   <div class="max-w-[900px] mx-auto px-6 py-12">
    <div class="bg-white rounded-xl p-8 shadow-sm mb-8 text-center">
     <h1 class="text-5xl font-bold text-[#1E3A8A] mb-4">
-     Semester 2 Notes
+     Semester 10 Notes
     </h1>
     <p class="text-base text-[#64748B] max-w-2xl mx-auto mb-6">
-     Complete notes for all Semester 1 subjects of B.A.L.L.B program. Download PDF notes for each subject and access corresponding YouTube video lectures.
+     Complete notes for all Semester subjects of B.A.L.L.B program. Download PDF notes for each subject and access corresponding YouTube video lectures.
     </p>
-    <div class="flex flex-wrap items-center justify-center gap-3 pt-6 border-t border-[#E2E8F0]">
-     <input class="px-4 py-3 bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg text-sm outline-none w-full max-w-[300px]" placeholder="Search subjects..." type="text"/>
-     <select class="px-4 py-3 bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg text-sm outline-none">
-      <option>
-       All Subjects
-      </option>
-      <option>
-       General English-I
-      </option>
-      <option>
-       Sociology-I
-      </option>
-      <option>
-       Political Science-I
-      </option>
-      <option>
-       Economics-I
-      </option>
-      <option>
-       Indian History-I
-      </option>
-      <option>
-       BL-102
-      </option>
-      <option>
-       BL-103
-      </option>
-      <option>
-       BL-104
-      </option>
-     </select>
-    </div>
-   </div>
-   <!--- END --->
-   <!--- START: Subject Notes List --->
-   <!--- DESCRIPTION: List of all Semester 1 subjects with download options --->
+    <!--- START: Subject Notes List --->
+   <!--- DESCRIPTION: List of all Semester subjects with download options --->
    <div class="space-y-4">
     <article class="bg-white rounded-lg p-6 shadow-sm border border-[#E2E8F0] text-center">
      <div class="flex justify-center mb-3">
@@ -158,23 +130,14 @@ font-family: 'Inter', sans-serif;
       </div>
      </div>
      <h3 class="text-lg font-bold text-[#0F172A] mb-2">
-      General English-I
+      UPZA & LR ACT
      </h3>
-     <p class="text-sm text-[#64748B] mb-3">
-      Fundamentals of English language, grammar, composition and communication skills
-     </p>
-     <div class="flex flex-wrap justify-center gap-2 mb-4">
+    <div class="flex flex-wrap justify-center gap-2 mb-4">
       <span class="px-3 py-1 bg-[#EFF6FF] text-[#1E3A8A] text-xs font-medium rounded-full">
-       Semester 1
-      </span>
-      <span class="px-3 py-1 bg-[#F0FDF4] text-[#10B981] text-xs font-medium rounded-full">
-       Language
+       Semester 10
       </span>
      </div>
      <div class="flex justify-center gap-2">
-      <button class="px-6 py-2 bg-[#3B82F6] text-white rounded-lg font-medium text-sm">
-       View
-      </button>
       <button class="px-6 py-2 bg-[#10B981] text-white rounded-lg font-medium text-sm flex items-center gap-2">
        <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
@@ -200,23 +163,14 @@ font-family: 'Inter', sans-serif;
       </div>
      </div>
      <h3 class="text-lg font-bold text-[#0F172A] mb-2">
-      Sociology-I
+      Law of Taxation
      </h3>
-     <p class="text-sm text-[#64748B] mb-3">
-      Introduction to sociology, social structures, institutions and Indian society
-     </p>
      <div class="flex flex-wrap justify-center gap-2 mb-4">
       <span class="px-3 py-1 bg-[#EFF6FF] text-[#1E3A8A] text-xs font-medium rounded-full">
-       Semester 1
-      </span>
-      <span class="px-3 py-1 bg-[#F0FDF4] text-[#10B981] text-xs font-medium rounded-full">
-       Social Science
+       Semester 10
       </span>
      </div>
      <div class="flex justify-center gap-2">
-      <button class="px-6 py-2 bg-[#3B82F6] text-white rounded-lg font-medium text-sm">
-       View
-      </button>
       <button class="px-6 py-2 bg-[#10B981] text-white rounded-lg font-medium text-sm flex items-center gap-2">
        <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
@@ -242,23 +196,14 @@ font-family: 'Inter', sans-serif;
       </div>
      </div>
      <h3 class="text-lg font-bold text-[#0F172A] mb-2">
-      Political Science-I
+      Cyber Law
      </h3>
-     <p class="text-sm text-[#64748B] mb-3">
-      Introduction to political theory, systems, Indian Constitution and governance
-     </p>
      <div class="flex flex-wrap justify-center gap-2 mb-4">
       <span class="px-3 py-1 bg-[#EFF6FF] text-[#1E3A8A] text-xs font-medium rounded-full">
-       Semester 1
+       Semester 10
       </span>
-      <span class="px-3 py-1 bg-[#F0FDF4] text-[#10B981] text-xs font-medium rounded-full">
-       Political Science
-      </span>
-     </div>
+      </div>
      <div class="flex justify-center gap-2">
-      <button class="px-6 py-2 bg-[#3B82F6] text-white rounded-lg font-medium text-sm">
-       View
-      </button>
       <button class="px-6 py-2 bg-[#10B981] text-white rounded-lg font-medium text-sm flex items-center gap-2">
        <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
@@ -284,23 +229,14 @@ font-family: 'Inter', sans-serif;
       </div>
      </div>
      <h3 class="text-lg font-bold text-[#0F172A] mb-2">
-      Economics-I
+      Indian Judical Sysytem Problems and Solution
      </h3>
-     <p class="text-sm text-[#64748B] mb-3">
-      Microeconomics fundamentals, market structures and Indian economic development
-     </p>
      <div class="flex flex-wrap justify-center gap-2 mb-4">
       <span class="px-3 py-1 bg-[#EFF6FF] text-[#1E3A8A] text-xs font-medium rounded-full">
-       Semester 1
-      </span>
-      <span class="px-3 py-1 bg-[#F0FDF4] text-[#10B981] text-xs font-medium rounded-full">
-       Economics
+       Semester 10
       </span>
      </div>
      <div class="flex justify-center gap-2">
-      <button class="px-6 py-2 bg-[#3B82F6] text-white rounded-lg font-medium text-sm">
-       View
-      </button>
       <button class="px-6 py-2 bg-[#10B981] text-white rounded-lg font-medium text-sm flex items-center gap-2">
        <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
@@ -326,23 +262,14 @@ font-family: 'Inter', sans-serif;
       </div>
      </div>
      <h3 class="text-lg font-bold text-[#0F172A] mb-2">
-      Indian History-I
+      PIL, Legal Aid & Para-Legal Services
      </h3>
-     <p class="text-sm text-[#64748B] mb-3">
-      Ancient and medieval Indian history, civilization and cultural heritage
-     </p>
      <div class="flex flex-wrap justify-center gap-2 mb-4">
       <span class="px-3 py-1 bg-[#EFF6FF] text-[#1E3A8A] text-xs font-medium rounded-full">
-       Semester 1
+       Semester 10
       </span>
-      <span class="px-3 py-1 bg-[#F0FDF4] text-[#10B981] text-xs font-medium rounded-full">
-       History
-      </span>
-     </div>
+      </div>
      <div class="flex justify-center gap-2">
-      <button class="px-6 py-2 bg-[#3B82F6] text-white rounded-lg font-medium text-sm">
-       View
-      </button>
       <button class="px-6 py-2 bg-[#10B981] text-white rounded-lg font-medium text-sm flex items-center gap-2">
        <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
@@ -487,5 +414,35 @@ font-family: 'Inter', sans-serif;
    </div>
   </footer>
   <!--- END --->
+  <script>
+     document.getElementById("mobileMenu").addEventListener("click", function(e){
+  if(e.target.id === "mobileMenu"){
+    toggleMenu();
+  }
+});
+  function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  const content = document.getElementById("menuContent");
+
+  const l1 = document.getElementById("line1");
+  const l2 = document.getElementById("line2");
+  const l3 = document.getElementById("line3");
+
+  menu.classList.toggle("hidden");
+
+  setTimeout(() => {
+    content.classList.toggle("-translate-y-full");
+  }, 10);
+
+  // Animate hamburger to X
+  l1.classList.toggle("rotate-45");
+  l1.classList.toggle("translate-y-2");
+
+  l2.classList.toggle("opacity-0");
+
+  l3.classList.toggle("-rotate-45");
+  l3.classList.toggle("-translate-y-2");
+}
+  </script>
  </body>
 </html>
